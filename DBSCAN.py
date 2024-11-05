@@ -9,7 +9,7 @@ eps = 0.6
 min_samples = 4
 db = DBSCAN(eps=eps, min_samples=min_samples).fit(data)
 labels = db.labels_
-plt.figure(figsize=(8, 5))
+# plt.figure(figsize=(8, 5))
 
 for k in set(labels):
     if k == -1:
